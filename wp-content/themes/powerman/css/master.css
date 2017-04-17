@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Powerman
+Version:	1.0
+Assigned to:	WebNik
+Primary use:	Powerman
+-------------------------------------------------------------------*/
+
+/* FONTS*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic|Roboto+Condensed:400,700);
+/*@import url('../fonts/font-awesome/css/font-awesome.min.css');
+@import url('../fonts/simple/simple-line-icons.css');
+@import url('../fonts/flaticon/flaticon.css');*/
+
+/* PLUGIN CSS */
+
+
+/* PLUGIN CSS */
+@import url('../assets/bootstrap/css/bootstrap.css');
+@import url('../assets/isotope/isotope.css');
+@import url('../assets/owl-carousel/owl.carousel.css');
+@import url('../assets/owl-carousel/owl.transitions.css');
+@import url('../assets/owl-carousel/owl.theme.css');
+@import url('../assets/prettyphoto/css/prettyPhoto.css');
+@import url('../assets/yamm/yamm.css');
+/*@import url('../assets/loader/css/loader.css');*/
+@import url('../assets/datetimepicker/jquery.datetimepicker.css');
+/*@import url('../assets/animate/animate.css');*/
+/*@import url('../assets/validation/validation-2.2.min.css');
+@import url('../assets/slider-pro/dist/css/slider-pro.css');*/
+@import url('../assets/hover-effect-ideas/css/set1.css');
+@import url('../assets/ihover/src/ihover.css');
+@import url('../assets/magnific/magnific-popup.css');
+
+
+
+
+
+/* MAIN CSS */
+@import url('theme.css');
+@import url('sections.css');
+@import url('sidebar.css');
+@import url('blog.css');
+@import url('responsive.css');
+@import url('color.css');
+/*@import url('debugging.css');*/
+

@@ -1,0 +1,32 @@
+ver 1.01 —  Fix social icons in header
+
+
+ver 1.02 
+
+
+vc_templates/*
+templates/*
+style.css
+
+
+
+ver 1.03
+
+
+web fonts problem
+
+fonts/*
+
+ver. 1.04
+
+Fix favicon
+
+ver 1.05
+
+Fix Request4Quote
+
+vc_templates/block_request4quote.php
+
+
+ver 1.06
+Remove Favicon from tab General

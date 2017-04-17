@@ -1,0 +1,183 @@
+/*
+Theme Name: Reinup
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
+body{margin:0;padding:0;border:0;outline:0;font-family:Myriad Pro;letter-spacing:1px;}
+#topo{width:100%;height:138px;background:url(../img/topoBg.jpg) no-repeat rgba(0,0,0,.3); position:relative;}
+.center{width:1002px; margin:0 auto;position:relative;}
+#topo .logo{width:194px;height:94px;background:url(../img/logo.png) no-repeat;float:left;margin-top:25px;}
+#topo .social{width:240px;float:right;margin-top:17px;}
+#topo .social a{width:30px;height:29px;margin-right:5px;background:url(../img/social.png) no-repeat;display:inline-block;}
+#topo .social .facebook{background-position:0 0;}
+#topo .social .twitter{background-position:-35px 0;}
+#topo .social .instagram{background-position:-67px 0px;}
+#topo .social .nuvem{background-position:-100px 0;}
+#topo .social .youtube{background-position:-135px 0;}
+#topo .social .wordpress{background-position:-167px 0;}
+#topo .nav{padding-top:83px;margin-top:0;}
+#topo .nav li{display:inline-block;margin:0 5px;}
+#topo .nav li:after {content: "|";color: #FFF;font-size: 22px;position: relative;left: 8px;top: 1px;}
+#topo .nav li:last-child:after{display:none;}
+#topo .nav li a{color:#FFF;text-decoration:none;font-size: 14px;text-transform: uppercase;}
+.banner {width: 100%;height: 530px;background: url(../img/banner1.jpg)no-repeat top center #000;margin-top: -74px;background-attachment: fixed}
+#sobre {width: 100%;height: 511px;background-image: url(../img/aboutBg.jpg);background-repeat: no-repeat;background-size: contain;background-position: top center;}
+#containerSobre{position:relative;background-attachment: fixed}
+#sobre .titulo{font-size:2vw;color:#fff;text-align:center;line-height:6vw;}
+#sobre .box {width: 508px;height: 400px;float: right;background-color: rgba(255,255,255,0.4);top:0;font-family:arial;margin:-5px 10px 0 0;}
+#sobre .box .titulo {font-size: 1.2vw;color: #424242;text-align: left;display: inline;line-height: 80px;margin-left: 1vw;padding-bottom: 10px;border-bottom: solid 1px;padding-right: 8vw;}
+#sobre .box .desc {width: 450px;padding: 0px 1.5vw;font-size: 1vw;overflow: auto;height: 15vw;}
+#eles{
+	width:100%;
+	height: 63vh;
+	background:url('../img/eles-bg.png') repeat-x #A14242;
+	margin-top:-1px;
+}
+#eles .titulo {
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-right: 20vw;
+    margin-top: 34px;
+    padding-bottom: 10px;
+    float:left;
+}
+.eles a {
+    width: 185px;
+    height: 185px;
+    display: inline-block;
+    margin:0 5px;
+    background-image:url(../img/ico-eles.png);
+}
+.eles a:nth-child(1){background-position:-23px -21px;}
+.eles a:nth-child(2){background-position:-224px -21px;}
+.eles a:nth-child(3){background-position:-424px -21px;}
+.eles a:nth-child(4){background-position:-618px -21px;}
+.eles a:nth-child(5){background-position:190px -21px;}
+.eles{clear: both;padding-top:45px;}
+
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: solid 1px #666;
+    background: #FFF;
+    border-radius: 7px;
+    float:right;
+    margin-top:68px;
+    cursor:pointer;
+
+}
+
+.nav-mobile li{list-style-type: none;}
+ul.nav-mobile {
+    clear: both;
+    position: absolute;
+    right: -230px;
+    top: 122px;
+    background:rgba(2, 2, 2, 0.4);
+    border-radius: 3px;
+    display: none;
+}
+.nav-mobile li a {
+    padding: 10px 20px;
+    display: block;
+    color:#FFF;
+    text-decoration: none;
+}
+.nav-mobile li a:hover{
+    color:#e0dfda;
+    text-decoration:underline;
+}
+video.video {
+    margin-top: -80px;
+}
+
+div#fotos {
+    width: 244px;
+    height: 256px;
+    display: block;
+    border: solid;
+    background-color:#333333;
+}
+@media screen and (max-width: 1002px) {
+    .center{
+        width:100%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .center{
+        width:100%;
+    }
+}
+@media screen and (max-width: 640px) {
+   .nav-btn {
+    display:block;
+   } 
+   .nav{display:none;}
+}
+
+@media screen and (min-width: 640px) {
+    ul.nav-mobile{display:none;}
+}
+@media screen and (max-width: 505px) {
+    .social{display:none;}
+}
